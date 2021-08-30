@@ -1,0 +1,220 @@
+html {
+	font-size: 62.5% !important;    /* 取默认字体的百分比 */
+}
+@media (min-width: 992px){
+	html {
+		font-size: 62.5%;
+	}
+}
+@media (min-width: 768px){
+	html {
+		font-size: 59%;
+	}
+
+}
+@media (min-width: 576px){
+	html {
+		font-size: 56%
+	}
+}
+body{
+	overflow-x: hidden;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+}
+@media (max-width:330px){
+    .mWidth{
+        width: 330px !important;
+    }
+}
+.leftCon{
+    left: 0;
+}
+.leftCon header{
+    height: 80px;
+}
+.leftCon header ul li a{
+    font-size: 1.6rem;
+}
+.login{
+    height: calc(100vh - 80px);
+}
+@media (max-width:992px){
+    .login{
+        height: auto;
+    }
+    .leftCon{
+        position: static !important;
+        border-right: none !important;
+    }
+}
+
+.login .icon-kafei{
+    font-size: 24px;
+    color: #67a4c7
+}
+.icon-menu{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #858585;
+}
+.icon-guanbi{
+    cursor: pointer;
+}
+.login a{
+    font-size: 1.6rem;
+}
+.border-radius-13{
+    border-radius: 13px;
+}
+.start h2{
+    font-size: 2.2rem;
+}
+.start p{
+    font-size: 1.6rem;
+}
+.gold{
+    color: #C2A661;
+}
+
+
+.betters h3,
+.teah h3{
+    font-size: 2.2rem;
+}
+.betters h4{
+    font-size: 1.6rem;
+}
+.betters p,
+.teah p{
+    font-size: 1.6rem;
+}
+.betters a p:first-of-type{
+    font-size: 1.4rem;
+}
+.betters a p:last-of-type{
+    font-size: 1.2rem;
+}
+.betters li{
+    margin-top: 56px;
+}
+.betters li a img{
+    width: 40%;
+    margin-top: -28px;
+}
+.betters li a{
+    transition: .2s;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,.12);
+}
+.betters li a:hover{
+    box-shadow: 0 0 4px 1px rgba(0,0,0,.22);
+    transform: translateY(-5px);
+}
+/* @media (min-width:576px){
+    .btn-lg{
+        display: none;
+    }
+} */
+.teah>div:last-of-type span{
+    left: 0;
+    top: 0;
+    background-color: #C2A661;
+}
+.teah li{
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,.1);
+    width: 288px;
+    flex: 0 0 auto;
+    transition: .2s;
+}
+@media (max-width:768px){
+    .teah li{
+        width: 200px;
+    }
+}
+.teah li:hover{
+    box-shadow: 0px 1px 4px 2px rgba(0,0,0,.2);
+    transform: translateY(-5px);
+}
+.scroll-ul{
+    left: 10px;
+}
+.header-nav ul li a{
+    font-size: 1.8rem;
+}
+.header-nav{
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.2,1);
+    z-index: -1;
+    transition: .2s linear;
+}
+.header-nav>div{
+    height: 100%;
+}
+.header-nav footer a{
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.38);
+}
+.header-nav.active{
+    z-index: 10;
+    opacity: 1;
+    transform: scale(1,1);
+}
+@media (max-width:576px){
+    .header-nav{
+        display: none;
+    }
+}
+.login-nav{
+    opacity: 1;
+    transition: .2s linear;
+}
+.login-nav.active{
+    opacity: 0;
+}
+
+#icon-menu{
+    transition: .2s;
+}
+#icon-menu.active{
+    opacity: 0;
+    transform: scale(0.3);
+}
+#menu-btn,
+#close-btn{
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: .2s;
+    transform: scale(.5);
+}
+#close-btn{
+    margin-right: .75rem;
+}
+#header-menu{
+    transition: .2s linear;
+}
+#header-menu.active{
+    opacity: 0;
+    z-index: -1;
+}
+#menu-btn.active,
+#close-btn.active{
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.footer-menu li a span:first-of-type{
+    font-size: 2.5rem;
+}
+.footer-menu a.active {
+    color: #00A862!important;
+}
